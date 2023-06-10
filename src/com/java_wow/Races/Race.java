@@ -1,11 +1,11 @@
-package com.java_wow;
+package com.java_wow.Races;
 
-public class Class {
+public class Race {
 
     private String name;
     private String description;
 
-    public Class(String name, String description) {
+    public Race(String name, String description) {
         this.name = name;
         this.description = description;
     }

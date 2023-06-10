@@ -1,6 +1,6 @@
 package com.java_wow;
 
-public class Character {
+public class Character{
 
     private String name;
     private String description;
