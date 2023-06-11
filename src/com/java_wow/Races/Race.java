@@ -4,6 +4,7 @@ public class Race {
 
     private String name;
     private String description;
+    private char gender;
 
     public Race(String name, String description) {
         this.name = name;
@@ -25,5 +26,13 @@ public class Race {
     public void setDescription(String description) {
         this.description = description;
         System.out.println("Description: " + this.description);
+    }
+    public char getGender(){
+        System.out.println("Gender: " + this.gender);
+        return this.gender;
+    }
+    public void setGender(char gender){
+        this.gender = gender;
+        System.out.println("Gender: " + this.gender);
     }
 }
