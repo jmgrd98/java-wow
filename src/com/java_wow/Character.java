@@ -76,4 +76,55 @@ public class Character{
         this.mana = mana;
         System.out.println("Mana: " + this.mana);
     }
+
+    public static void main(String[] args) {
+
+    }
+
+    public static Character createCharacter(String name, String description, int strength, int agility, int intelligence, int health, int mana) {
+        Character newCharacter = new Character(name, description, strength, agility, intelligence, health, mana);
+        return newCharacter;
+    }
+
+    public static void printCharacter(Character character) {
+        System.out.println("Name: " + character.getName());
+        System.out.println("Description: " + character.getDescription());
+        System.out.println("Strength: " + character.getStrength());
+        System.out.println("Agility: " + character.getAgility());
+        System.out.println("Intelligence: " + character.getIntelligence());
+        System.out.println("Health: " + character.getHealth());
+        System.out.println("Mana: " + character.getMana());
+    }
+
+    public static void printCharacter(Character[] characters) {
+        for (int i = 0; i < characters.length; i++) {
+            System.out.println("Name: " + characters[i].getName());
+            System.out.println("Description: " + characters[i].getDescription());
+            System.out.println("Strength: " + characters[i].getStrength());
+            System.out.println("Agility: " + characters[i].getAgility());
+            System.out.println("Intelligence: " + characters[i].getIntelligence());
+            System.out.println("Health: " + characters[i].getHealth());
+            System.out.println("Mana: " + characters[i].getMana());
+        }
+    }
+
+    public int takeDamage(int damage) {
+        this.health -= damage;
+        return this.health;
+    }
+
+    public int heal(int heal) {
+        this.health += heal;
+        return this.health;
+    }
+
+    public int castSpell(int manaCost) {
+        this.mana -= manaCost;
+        return this.mana;
+    }
+
+    public int restoreMana(int mana) {
+        this.mana += mana;
+        return this.mana;
+    }
 }
