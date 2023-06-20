@@ -6,8 +6,8 @@ public class Warrior extends Class{
     }
 
     public static Warrior createWarrior(String name, String description) {
-        Warrior newWarrior = new Warrior(name, description);
-        return newWarrior;
+        Warrior warrior = new Warrior(name, description);
+        return warrior;
     }
 
     public static void main(String[] args) {

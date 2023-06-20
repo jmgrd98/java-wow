@@ -6,8 +6,8 @@ public class Mage extends Class{
     }
 
     public static Mage createMage(String name, String description) {
-        Mage newMage = new Mage(name, description);
-        return newMage;
+        Mage mage = new Mage(name, description);
+        return mage;
     }
 
     public static void main(String[] args) {

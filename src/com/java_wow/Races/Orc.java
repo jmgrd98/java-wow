@@ -7,8 +7,8 @@ public class Orc extends Race{
             }
 
             public static Orc createOrc(String name, String description) {
-                Orc newOrc = new Orc(name, description);
-                return newOrc;
+                Orc orc = new Orc(name, description);
+                return orc;
             }
 
             public static void main(String[] args) {

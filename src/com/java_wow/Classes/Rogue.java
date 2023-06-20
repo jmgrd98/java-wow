@@ -6,8 +6,8 @@ public class Rogue extends Class{
     }
 
     public static Rogue createRogue(String name, String description) {
-        Rogue newRogue = new Rogue(name, description);
-        return newRogue;
+        Rogue rogue = new Rogue(name, description);
+        return rogue;
     }
 
     public static void main(String[] args) {
